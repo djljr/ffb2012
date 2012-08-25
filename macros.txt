@@ -1,0 +1,8 @@
+D91kt;i, p092
+iinsert into tightends (name, team) values ('t,a'llli'A');j0
+iinsert into kickers (name, team) values ('t,a'llli'$xA');0
+iinsert into runningbacks (name, team) values ('t,a'llli'$xA');0
+iinsert into widereceivers (name, team) values ('t,a'llli'$xA');0
+iinsert into defenses (name) values ('$xA');0
+i, overall, byeweek2F,
+dt(xf)x0
