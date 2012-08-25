@@ -6,3 +6,8 @@ iinsert into widereceivers (name, team) values ('t,a'llli'$xA');0
 iinsert into defenses (name) values ('$xA');0
 i, overall, byeweek2F,
 dt(xf)x0
+dd
+nkVjd
+i't,a'ldf	i,'f	xi','$a'0
+iinsert into injuries (name, status, date €kb)€ü values (A)0
+A;
