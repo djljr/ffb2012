@@ -8,6 +8,7 @@ i, overall, byeweek2F,
 dt(xf)x0
 dd
 nkVjd
-i't,a'ldf	i,'f	xi','$a'0
-iinsert into injuries (name, status, date €kb)€ü values (A)0
+i't,a'ldf	i,'f	xi','$a'Jxi,'A'0
+iinsert into injuries (name, status, date, comment €kb)€ü values (A)0
 A;
+/Augct22012-08-

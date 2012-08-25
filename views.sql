@@ -11,6 +11,10 @@ select 'TE', name, team, overall, byeweek from tightends
 union
 select 'WR', name, team, overall, byeweek from widereceivers
 union
-select 'DE', name, null, overall, byeweek from defenses)
+select 'DE', name, null, overall, byeweek from defenses),
+injuries as (
+select i.name, array_agg(i.date || ', ' || i.status || ', ' || i.comment) as status
+from injuries i
+group by i.name)
 select p.*, i.status from players p
  left join injuries i on p.name = i.name 
