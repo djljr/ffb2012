@@ -1,3 +1,4 @@
+drop table injuries;
 create table injuries (name varchar(50), status varchar(20), date date, comment text);
 
 insert into injuries (name, status, date, comment) values ('Andre Roberts','Questionable','2012-08-24','Comment: Roberts (neck) played in Thursday''s preseason loss to the Titans, gaining 32 yards on five catches with one touchdown.');

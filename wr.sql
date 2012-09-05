@@ -1,3 +1,4 @@
+drop table widereceivers;
 create table widereceivers (name varchar(50), team varchar(20), overall int4, byeweek int4);
 
 insert into widereceivers (name, team, overall, byeweek) values ('Calvin Johnson', 'DET', 7 , 5);

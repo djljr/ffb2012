@@ -1,3 +1,4 @@
+drop table runningbacks;
 create table runningbacks (name varchar(50), team varchar(10), overall int4, byeweek int4);
 
 insert into runningbacks (name, team, overall, byeweek) values ('Arian Foster', 'HO', 1 , 8);

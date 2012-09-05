@@ -7,8 +7,10 @@ iinsert into defenses (name) values ('$xA');0
 i, overall, byeweek2F,
 dt(xf)x0
 dd
-nkVjd
-i't,a'ldf	i,'f	xi','$a'Jxi,'A'0
-iinsert into injuries (name, status, date, comment €kb)€ü values (A)0
-A;
-/Augct22012-08-
+/NAMEkVjd
+i't,a'ldf	i,'f	xi','$a'Jxi,'A'0j
+iinsert into injuries (name, status, date, comment) values (A);0j
+A;0j
+/Sep cf 2012-09-00j
+
+

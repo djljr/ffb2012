@@ -1,3 +1,4 @@
+drop table quarterbacks;
 create table quarterbacks ( name varchar(50), team varchar(10), overall int4, byeweek int4 );
 
 insert into quarterbacks (name, team, overall, byeweek) values ('Aaron Rodgers', 'GB',4 ,10);

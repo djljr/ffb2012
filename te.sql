@@ -1,3 +1,4 @@
+drop table tightends;
 create table tightends ( name varchar(50), team varchar(10), overall int4, byeweek int4 );
 
 insert into tightends (name, team, overall, byeweek) values ('Rob Gronkowski', 'NE', 16 , 9);

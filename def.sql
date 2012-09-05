@@ -1,3 +1,4 @@
+drop table defenses;
 create table defenses ( name varchar(20), overall int4, byeweek int4 );
 
 insert into defenses (name, overall, byeweek) values ('49ers D/ST', 109 , 9);

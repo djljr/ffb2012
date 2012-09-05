@@ -1,3 +1,4 @@
+drop table kickers;
 create table kickers (name varchar(50), team varchar(10), overall int4, byeweek int4);
 
 insert into kickers (name, team, overall, byeweek) values ('Stephen Gostkowski', 'NE ', 149 , 9);
