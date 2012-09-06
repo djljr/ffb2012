@@ -1,0 +1,160 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: draft; Type: TABLE; Schema: public; Owner: dlipovsky; Tablespace: 
+--
+
+CREATE TABLE draft (
+    owner character varying(50),
+    player character varying(50),
+    picknumber integer DEFAULT nextval('draftpicks'::regclass),
+    picktime timestamp without time zone DEFAULT now()
+);
+
+
+ALTER TABLE public.draft OWNER TO dlipovsky;
+
+--
+-- Data for Name: draft; Type: TABLE DATA; Schema: public; Owner: dlipovsky
+--
+
+INSERT INTO draft VALUES ('brian', 'Matthew Stafford', 7, '2012-08-25 19:05:39.318334');
+INSERT INTO draft VALUES ('chris', 'Cam Newton', 8, '2012-08-25 19:06:08.982631');
+INSERT INTO draft VALUES ('tom', 'Aaron Rodgers', 1, '2012-08-25 19:03:00.593188');
+INSERT INTO draft VALUES ('dan', 'Tom Brady', 2, '2012-08-25 19:03:10.081597');
+INSERT INTO draft VALUES ('den', 'Arian Foster', 3, '2012-08-25 19:03:53.573144');
+INSERT INTO draft VALUES ('michelle', 'Ray Rice', 4, '2012-08-25 19:04:01.36168');
+INSERT INTO draft VALUES ('tom sr', 'Drew Brees', 5, '2012-08-25 19:04:11.104031');
+INSERT INTO draft VALUES ('chris', 'Chris Johnson', 9, '2012-08-25 19:06:31.333528');
+INSERT INTO draft VALUES ('brian', 'Matt Forte', 10, '2012-08-25 19:08:23.785379');
+INSERT INTO draft VALUES ('joe', 'Tony Romo', 11, '2012-08-25 19:08:56.760542');
+INSERT INTO draft VALUES ('tom sr', 'Darren McFadden', 12, '2012-08-25 19:09:49.313643');
+INSERT INTO draft VALUES ('michelle', 'Matt Ryan', 13, '2012-08-25 19:10:17.859852');
+INSERT INTO draft VALUES ('joe', 'Sebastian Janikowski', 75, '2012-08-25 20:34:55.416079');
+INSERT INTO draft VALUES ('tom sr', 'Jonathan Stewart', 76, '2012-08-25 20:36:52.026441');
+INSERT INTO draft VALUES ('michelle', 'Owen Daniels', 77, '2012-08-25 20:37:24.130529');
+INSERT INTO draft VALUES ('den', 'DeAngelo Williams', 78, '2012-08-25 20:40:59.248482');
+INSERT INTO draft VALUES ('dan', 'Carson Palmer', 79, '2012-08-25 20:41:18.88996');
+INSERT INTO draft VALUES ('tom', 'Josh Freeman', 80, '2012-08-25 20:41:32.174444');
+INSERT INTO draft VALUES ('tom', 'Dwayne Bowe', 81, '2012-08-25 20:44:59.854996');
+INSERT INTO draft VALUES ('den', 'Philip Rivers', 14, '2012-08-25 19:12:14.440648');
+INSERT INTO draft VALUES ('dan', 'Fred Jackson', 15, '2012-08-25 19:12:48.269784');
+INSERT INTO draft VALUES ('tom', 'Calvin Johnson', 16, '2012-08-25 19:13:02.341537');
+INSERT INTO draft VALUES ('dan', 'Peyton Manning', 18, '2012-08-25 19:15:32.722531');
+INSERT INTO draft VALUES ('den', 'Greg Jennings', 19, '2012-08-25 19:17:10.651979');
+INSERT INTO draft VALUES ('michelle', 'Eli Manning', 20, '2012-08-25 19:18:07.380328');
+INSERT INTO draft VALUES ('tom sr', 'Julio Jones', 21, '2012-08-25 19:18:35.922932');
+INSERT INTO draft VALUES ('joe', 'Jimmy Graham', 22, '2012-08-25 19:19:00.649839');
+INSERT INTO draft VALUES ('brian', 'Michael Vick', 23, '2012-08-25 19:19:29.419648');
+INSERT INTO draft VALUES ('chris', 'Jay Cutler', 24, '2012-08-25 19:21:31.191668');
+INSERT INTO draft VALUES ('chris', 'Larry Fitzgerald', 25, '2012-08-25 19:21:35.449428');
+INSERT INTO draft VALUES ('tom', 'Rob Gronkowski', 17, '2012-08-25 19:13:41.320565');
+INSERT INTO draft VALUES ('joe', 'Wes Welker', 27, '2012-08-25 19:22:13.621339');
+INSERT INTO draft VALUES ('dan', 'Eric Decker', 82, '2012-08-25 20:45:10.734216');
+INSERT INTO draft VALUES ('den', 'Stephen Gostkowski', 83, '2012-08-25 20:46:37.739102');
+INSERT INTO draft VALUES ('michelle', 'Alex Smith', 84, '2012-08-25 20:49:08.647732');
+INSERT INTO draft VALUES ('tom sr', 'Eagles D/ST', 85, '2012-08-25 20:49:25.30447');
+INSERT INTO draft VALUES ('joe', 'Miles Austin', 86, '2012-08-25 20:50:00.380316');
+INSERT INTO draft VALUES ('brian', 'Jake Locker', 87, '2012-08-25 20:50:59.387745');
+INSERT INTO draft VALUES ('chris', 'Dez Bryant', 88, '2012-08-25 20:51:13.593512');
+INSERT INTO draft VALUES ('chris', 'Bears D/ST', 89, '2012-08-25 20:51:38.793819');
+INSERT INTO draft VALUES ('brian', 'Vincent Jackson', 90, '2012-08-25 20:52:01.668148');
+INSERT INTO draft VALUES ('joe', 'Ryan Tannehill', 91, '2012-08-25 20:54:10.207132');
+INSERT INTO draft VALUES ('tom sr', 'Reggie Wayne', 92, '2012-08-25 20:55:23.425788');
+INSERT INTO draft VALUES ('den', 'Sam Bradford', 94, '2012-08-25 20:59:33.102071');
+INSERT INTO draft VALUES ('dan', 'Jets D/ST', 95, '2012-08-25 21:00:00.919456');
+INSERT INTO draft VALUES ('tom', 'Mason Crosby', 96, '2012-08-25 21:03:12.629147');
+INSERT INTO draft VALUES ('tom', 'Pierre Garcon', 97, '2012-08-25 21:03:28.080878');
+INSERT INTO draft VALUES ('dan', 'Ben Tate', 98, '2012-08-25 21:03:52.996463');
+INSERT INTO draft VALUES ('tom sr', 'Antonio Gates', 28, '2012-08-25 19:23:50.566603');
+INSERT INTO draft VALUES ('michelle', 'Brandon Marshall', 29, '2012-08-25 19:23:59.200527');
+INSERT INTO draft VALUES ('michelle', 'Mike Wallace', 36, '2012-08-25 19:37:13.11625');
+INSERT INTO draft VALUES ('tom sr', 'Robert Griffin III', 37, '2012-08-25 19:37:37.421492');
+INSERT INTO draft VALUES ('joe', 'Ryan Fitzpatrick', 38, '2012-08-25 19:37:53.970901');
+INSERT INTO draft VALUES ('joe', 'LeSean McCoy', 6, '2012-08-25 19:04:48.658414');
+INSERT INTO draft VALUES ('chris', 'Ahmad Bradshaw', 40, '2012-08-25 19:41:33.936971');
+INSERT INTO draft VALUES ('den', 'Jermichael Finley', 35, '2012-08-25 19:34:22.41632');
+INSERT INTO draft VALUES ('joe', 'Beanie Wells', 102, '2012-08-25 21:09:28.910949');
+INSERT INTO draft VALUES ('brian', 'Jason Witten', 103, '2012-08-25 21:09:44.119113');
+INSERT INTO draft VALUES ('chris', 'Mark Ingram', 104, '2012-08-25 21:10:53.843657');
+INSERT INTO draft VALUES ('chris', 'Garrett Hartley', 105, '2012-08-25 21:11:21.9603');
+INSERT INTO draft VALUES ('brian', 'Steelers D/ST', 106, '2012-08-25 21:12:17.277883');
+INSERT INTO draft VALUES ('joe', 'Kenny Britt', 107, '2012-08-25 21:13:24.151325');
+INSERT INTO draft VALUES ('tom sr', 'Peyton Hillis', 108, '2012-08-25 21:18:17.325149');
+INSERT INTO draft VALUES ('michelle', 'Torrey Smith', 109, '2012-08-25 21:19:33.851687');
+INSERT INTO draft VALUES ('den', 'Stevan Ridley', 110, '2012-08-25 21:19:43.598686');
+INSERT INTO draft VALUES ('dan', 'Justin Blackmon', 111, '2012-08-25 21:20:24.470186');
+INSERT INTO draft VALUES ('tom', 'Michael Bush', 112, '2012-08-25 21:21:43.65546');
+INSERT INTO draft VALUES ('michelle', 'Shonn Greene', 93, '2012-08-25 20:55:23.425788');
+INSERT INTO draft VALUES ('chris', 'Ryan Mathews', 41, '2012-08-25 19:42:02.919084');
+INSERT INTO draft VALUES ('brian', 'Jamaal Charles', 42, '2012-08-25 19:42:45.716833');
+INSERT INTO draft VALUES ('joe', 'Trent Richardson', 43, '2012-08-25 19:42:54.256853');
+INSERT INTO draft VALUES ('tom sr', 'Jordy Nelson', 44, '2012-08-25 19:45:51.430277');
+INSERT INTO draft VALUES ('michelle', 'Steven Jackson', 45, '2012-08-25 19:46:29.65693');
+INSERT INTO draft VALUES ('den', 'Michael Turner', 46, '2012-08-25 19:47:21.387264');
+INSERT INTO draft VALUES ('dan', 'Roddy White', 47, '2012-08-25 19:48:11.052087');
+INSERT INTO draft VALUES ('tom', 'Victor Cruz', 48, '2012-08-25 19:52:03.562632');
+INSERT INTO draft VALUES ('tom', 'Marshawn Lynch', 49, '2012-08-25 19:52:17.574298');
+INSERT INTO draft VALUES ('dan', 'Vernon Davis', 50, '2012-08-25 19:55:21.577244');
+INSERT INTO draft VALUES ('den', 'Jeremy Maclin', 51, '2012-08-25 19:59:02.986207');
+INSERT INTO draft VALUES ('michelle', 'Marques Colston', 52, '2012-08-25 20:00:06.509604');
+INSERT INTO draft VALUES ('tom sr', 'Doug Martin', 53, '2012-08-25 20:00:32.364347');
+INSERT INTO draft VALUES ('brian', 'Andre Johnson', 26, '2012-08-25 19:21:35.449428');
+INSERT INTO draft VALUES ('joe', 'Percy Harvin', 54, '2012-08-25 20:01:02.242977');
+INSERT INTO draft VALUES ('brian', 'Steve Smith', 55, '2012-08-25 20:01:57.947235');
+INSERT INTO draft VALUES ('chris', 'Antonio Brown', 56, '2012-08-25 20:02:27.049329');
+INSERT INTO draft VALUES ('chris', 'Joe Flacco', 57, '2012-08-25 20:02:54.12006');
+INSERT INTO draft VALUES ('brian', 'Ben Roethlisberger', 58, '2012-08-25 20:04:17.509781');
+INSERT INTO draft VALUES ('joe', '49ers D/ST', 59, '2012-08-25 20:06:01.979699');
+INSERT INTO draft VALUES ('tom sr', 'David Akers', 60, '2012-08-25 20:06:13.254989');
+INSERT INTO draft VALUES ('michelle', 'Steve Johnson', 61, '2012-08-25 20:15:20.198105');
+INSERT INTO draft VALUES ('den', 'Brandon Lloyd', 62, '2012-08-25 20:15:27.490762');
+INSERT INTO draft VALUES ('dan', 'Darren Sproles', 63, '2012-08-25 20:15:50.256225');
+INSERT INTO draft VALUES ('tom', 'Frank Gore', 64, '2012-08-25 20:20:38.825556');
+INSERT INTO draft VALUES ('tom', 'Ravens D/ST', 65, '2012-08-25 20:21:03.299894');
+INSERT INTO draft VALUES ('dan', 'Nate Washington', 66, '2012-08-25 20:21:41.372338');
+INSERT INTO draft VALUES ('den', 'Texans D/ST', 67, '2012-08-25 20:25:25.348906');
+INSERT INTO draft VALUES ('michelle', 'Reggie Bush', 68, '2012-08-25 20:27:50.133558');
+INSERT INTO draft VALUES ('tom sr', 'Aaron Hernandez', 69, '2012-08-25 20:28:37.134222');
+INSERT INTO draft VALUES ('joe', 'Isaac Redman', 70, '2012-08-25 20:29:44.198441');
+INSERT INTO draft VALUES ('brian', 'Adrian Peterson', 71, '2012-08-25 20:29:54.088851');
+INSERT INTO draft VALUES ('chris', 'DeSean Jackson', 72, '2012-08-25 20:33:50.664083');
+INSERT INTO draft VALUES ('chris', 'Brandon Pettigrew', 73, '2012-08-25 20:34:02.116729');
+INSERT INTO draft VALUES ('brian', 'BenJarvus Green-Ellis', 74, '2012-08-25 20:34:16.322932');
+INSERT INTO draft VALUES ('den', 'Tony Gonzalez', 99, '2012-08-25 21:06:21.219692');
+INSERT INTO draft VALUES ('michelle', 'Lions D/ST', 100, '2012-08-25 21:08:37.804964');
+INSERT INTO draft VALUES ('tom sr', 'Willis McGahee', 101, '2012-08-25 21:09:06.908441');
+INSERT INTO draft VALUES ('den', 'Matt Schaub', 30, '2012-08-25 19:26:01.915826');
+INSERT INTO draft VALUES ('dan', 'Maurice Jones-Drew', 31, '2012-08-25 19:27:45.195235');
+INSERT INTO draft VALUES ('tom', 'DeMarco Murray', 32, '2012-08-25 19:30:29.315116');
+INSERT INTO draft VALUES ('tom', 'Andrew Luck', 33, '2012-08-25 19:30:38.436942');
+INSERT INTO draft VALUES ('dan', 'A.J. Green', 34, '2012-08-25 19:31:10.716815');
+INSERT INTO draft VALUES ('brian', 'Hakeem Nicks', 39, '2012-08-25 19:38:28.495793');
+
+
+--
+-- Name: fk_draft_player_player_name; Type: FK CONSTRAINT; Schema: public; Owner: dlipovsky
+--
+
+ALTER TABLE ONLY draft
+    ADD CONSTRAINT fk_draft_player_player_name FOREIGN KEY (player) REFERENCES player(name);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
